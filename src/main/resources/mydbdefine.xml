@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE databases SYSTEM "db-define-meta.dtd">
+<databases>
+    <database name="db1" encoding="UTF-8">
+        <table name="tb_hello" engine="InnoDB" charset="utf8mb4" collate ="utf8mb4_general_ci">
+            <field name="id" type="int" nullable="false"/>
+            <field name="name" type="varchar(20)" nullable="false" default=""/>
+            <field name="other" type="text" nullable="false" default=""/>
+        </table>
+    </database>
+
+    <database name="db2" encoding="UTF-8">
+        <table name="tb_goodnight" engine="InnoDB" charset="utf8mb4" collate ="utf8mb4_general_ci">
+            <field name="id" type="int" nullable="false"/>
+            <field name="time" type="datetime" nullable="false"/>
+        </table>
+    </database>
+</databases>

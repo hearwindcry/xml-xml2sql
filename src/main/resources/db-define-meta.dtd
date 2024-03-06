@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!ELEMENT databases (database+)>
+<!ELEMENT database (table+)>
+<!ATTLIST database
+        name CDATA #REQUIRED
+        encoding CDATA #IMPLIED>
+
+<!ELEMENT table (field+)>
+<!ATTLIST table
+        name CDATA #REQUIRED
+        engine CDATA #REQUIRED
+        charset CDATA #REQUIRED
+        collate CDATA #REQUIRED>
+
+<!ELEMENT field EMPTY>
+<!ATTLIST field
+        name CDATA #REQUIRED
+        type CDATA #REQUIRED
+        nullable (true|false) #REQUIRED
+        default CDATA #IMPLIED
+        comment CDATA #IMPLIED>
